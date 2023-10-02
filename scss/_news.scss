@@ -1,0 +1,75 @@
+.main-container {
+    min-height: calc(100vh - 180px);
+    margin: 50px 15px 50px 15px;
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "sectionA sectionA sectionA" 
+    "adC adC adC" 
+    "sectionB sectionB adA"
+    "sectionB sectionB adB"
+    "footer footer footer";
+  
+    .sectionA {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      grid-area: sectionA;
+  
+      article {
+        border-bottom: 1px solid grey;
+        padding: 0 0 20px 0;
+
+        .imageA {
+            width: 100%;
+        }
+
+        div p {
+            color: $color-paragraph;
+            padding: 10px 0 10px 0;
+          }
+      }
+    }
+
+    .sectionB {
+        display: flex;
+        flex-direction: column;
+        grid-area: sectionB;
+        gap: 15px;
+      
+        article {
+            .imageB {
+                width: 100%;
+              }
+
+            p {
+                color: $color-paragraph;
+                padding-top: 5px;
+              }
+        }
+      }
+
+      .adA {
+        text-align: center;
+        grid-area: adA;
+      }
+
+      .adB {
+        text-align: center;
+        grid-area: adB;
+      }
+      
+      .adC {
+        margin: 40px 0 40px 0;
+        grid-area: adC;
+      
+        img {
+          width: 100%;
+        }
+      }
+
+  }
+  
+  
+
+  

@@ -1,0 +1,77 @@
+/* HEADER */
+
+@mixin anchor {
+  color: $color-font-main;
+  text-decoration: none;
+}
+
+header {
+    height: 180px;
+    border-bottom: 4px double black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    /*align-items: center;*/
+    gap: 13px;
+    grid-area: header;
+
+    h1 {
+      margin: 0;
+    }
+  
+    div {
+      padding: 0 15px 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      p {
+        font-size: 12px;
+  
+        span {
+          font-weight: 700;
+        }
+      }
+  
+      .login {
+        border: none;
+        border-radius: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: .84rem;
+        padding: 6px 12px;
+        transform: all 10s;
+
+        &:hover {
+          background-color: rgb(216, 213, 213);
+        }
+      }
+    }
+  
+    h1 {
+      font-size: 3.5rem;
+      display: flex;
+      justify-content: center;
+    }
+  
+    nav ul {
+      list-style: none;
+
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      li {
+        transform: all 5s;
+
+        &:hover {
+          background-color: rgb(250, 247, 247);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  a {
+    @include anchor;
+  }
